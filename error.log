@@ -1,0 +1,74 @@
+
+2022-08-10 17:38:10,997 INFO: errors [in C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\app.py:972]
+2022-08-10 17:52:29,550 ERROR: Exception on /venues/create [POST] [in C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\app.py", line 359, in create_venue_submission
+    name = form.name.data.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\app.py", line 383, in create_venue_submission
+    flash('An error occurred. Venue ' + request.form['name'] + ' could not be listed.  see: http://flask.pocoo.org/docs/1.0/patterns/flashing/')
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\helpers.py", line 361, in flash
+    session["_flashes"] = flashes
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\sessions.py", line 98, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2022-08-10 17:54:14,983 ERROR: Exception on /venues/create [POST] [in C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\app.py", line 359, in create_venue_submission
+    name = form.name.data.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\app.py", line 383, in create_venue_submission
+    flash('An error occurred. Venue ' + request.form['name'] + ' could not be listed.  see: http://flask.pocoo.org/docs/1.0/patterns/flashing/')
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\helpers.py", line 361, in flash
+    session["_flashes"] = flashes
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\sessions.py", line 98, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2022-08-10 17:57:21,759 ERROR: Exception on /venues/create [POST] [in C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\app.py", line 359, in create_venue_submission
+    state = form.state.data.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\app.py", line 383, in create_venue_submission
+    db.session.close()
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\helpers.py", line 361, in flash
+    session["_flashes"] = flashes
+  File "C:\Users\user\fyyur\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\sessions.py", line 98, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
